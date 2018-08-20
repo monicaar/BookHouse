@@ -1,102 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Bootstrap Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-/* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-}
+<head th:replace="common/header :: common-header" />
 
-
-.box {
-  
-    border: 1px solid red;
-    }
-
-/* Add a gray background color and some padding to the footer */
-footer {
-	background-color: #f2f2f2;
-	padding: 25px;
-}
-
-
-.container {
-      padding: 80px 120px;
-  }
-  
-  
-  .home-headline{
-  font-family: 'Times New Roman',Times,serif;
-  font-size:24px;
-  color: #F2F3F4;
-  text-align:center;
-  margin-top:-13px;
-  }
-  
-  .home-headline span{
-  background-color: #231F20;
-  padding: 5px 22px;
-  }
-
-
-
-</style>
-</head>
 <body>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				
-				<a class="navbar-brand" href="#">MR & A BOOKSTORE</a>
-			</div>
-			<div id="myNavbar">
-				<ul class="nav navbar-nav navbar-left">
-					
-					
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle ="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false">BOOKS<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-					<li><a href="#">Browse the Bookshelf</a></li>
-					<li><a href="#">STORE HOURS &#38; Directions</a></li>
-					<li><a href="#">FAQ</a></li>
-										</ul></li>
-										<form class="navbar-form">
-										<div class="form-group">
-										<input type="text" name="keyword" class="form-control" placeholder="Book title"/>
-										
-										</div>
-										<button type="submit" class="btn btn-default">Search</button></form>
-					
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-				<li><a href="*">SHOPPING CART</a></li>
-				<li><a href="*">MY ACCOUNT</a></li>
-
-					<li><a href="#"><span class="glyphicon glyphicon-log-out"></span>
-							Logout</a></li>
-					
-				</ul>
-			</div>
-		</div>
-	</nav>
-	
-
-
-
+<div th:replace="common/header :: navbar" />
 
 
 
@@ -184,7 +92,7 @@ footer {
 <div class="container text-center">
   <h3>MR&A Bookstores</h3>
   <p><em>Every Reader's choice!!</em></p>
-  <p>‚ÄúWe read to know we're not alone....‚Äù</p>
+  <p>ìWe read to know we're not alone....î</p>
   <br>
   <div class="row">
     <div class="col-sm-4">

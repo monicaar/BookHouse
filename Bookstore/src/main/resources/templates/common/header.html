@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
-<head th:fragment="common-header"></head>
-<head>
+
+<head th:fragment="common-header">
 <title>MR & A Bookstore</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,13 +9,57 @@
     
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<div th:fragment="body-bottom-scripts">
+	
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</div>
+<style>
+	
+	.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+
+.box {
+  
+    border: 1px solid red;
+    }
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+
+.container {
+      padding: 80px 120px;
+  }
+  
+  
+  .home-headline{
+  font-family: 'Times New Roman',Times,serif;
+  font-size:24px;
+  color: #F2F3F4;
+  text-align:center;
+  margin-top:-13px;
+  }
+  
+  .home-headline span{
+  background-color: #231F20;
+  padding: 5px 22px;
+  }
+
+
+
+</style>
+	
+	
+
 	</head>
+	
 <body>
 
 <div th:fragment="navbar">
